@@ -21,9 +21,9 @@ function start_program()
             end
         else
             if ffi.os == "Windows" then
-                os.execute(script_path().."/scripts/autostart.bat \""..file.."\" "..args)
+                os.execute(script_path().."/scripts/autostart.bat \""..file.."\"")
             elseif ffi.os == "Linux" or ffi.os == "OSX" then
-                os.execute(script_path().."/scripts/autostart.sh \""..file.."\" "..args)
+                os.execute(script_path().."/scripts/autostart.sh \""..file.."\"")
             end
         end
     end
